@@ -25,6 +25,7 @@ print(arg_length)
 parser = argparse.ArgumentParser(prog='Program Name', description='Using_ArgParse is a program to test and produce example code for using the python package argparse')
 parser.add_argument('--x', type=int)
 parser.add_argument('--y', type=int)
+parser.add_argument('--z')
 parser.add_argument('-f', "--random_function", action='store_true', help="test a flag for function") # switch statement
 parser.add_argument('-v', '--version', action='version', version='%(prog)s 1.0')
 
@@ -38,3 +39,8 @@ if args.x != None:
 
 if args.random_function:
     print(args.random_function)
+
+if args.z != None:
+    print(args.z)
+
+
